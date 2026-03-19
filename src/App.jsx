@@ -21,42 +21,42 @@ const App = () => {
       url: "http://www.musiadapta.com/",
       icon: <Globe className="w-5 h-5" />,
       primary: true,
-      colorClass: "bg-[#8E298B] text-white border-[#8E298B] shadow-xl shadow-[#8E298B]/20 hover:-translate-y-1 hover:shadow-[#8E298B]/40"
+      colorClass: "bg-[#4db8ee] text-white border-[#4db8ee] shadow-xl shadow-[#4db8ee]/20 hover:-translate-y-1 hover:shadow-[#4db8ee]/40"
     },
     {
       title: "Instagram MUSIADAPTA",
       subtitle: "@gabymusiadapta_micuroci",
       url: "https://www.instagram.com/gabymusiadapta_micuroci/",
       icon: <Instagram className="w-5 h-5" />,
-      colorClass: "bg-white/90 backdrop-blur-xl border-[#8E298B]/15 hover:border-[#8E298B]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8E298B]"
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
     },
     {
       title: "Facebook",
       subtitle: "Centro de Estimulación y Musicoterapia",
       url: "https://www.facebook.com/centrodestimulacionymusicoterapia",
       icon: <Facebook className="w-5 h-5" />,
-      colorClass: "bg-white/90 backdrop-blur-xl border-[#8E298B]/15 hover:border-[#8E298B]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8E298B]"
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
     },
     {
       title: "Google Maps",
       subtitle: "Ubicación en Sevilla",
       url: "https://share.google/r6GcVEi9kwEBp7w9T",
       icon: <MapPin className="w-5 h-5" />,
-      colorClass: "bg-white/90 backdrop-blur-xl border-[#8E298B]/15 hover:border-[#8E298B]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8E298B]"
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
     },
     {
       title: "Musiadapta - Reseñas",
       subtitle: "Queremos saber tu opinión. Publica una reseña.",
       url: "https://g.page/r/CRjS4P6CsClrEAE/review",
       icon: <Star className="w-5 h-5" />,
-      colorClass: "bg-white/90 backdrop-blur-xl border-[#8E298B]/15 hover:border-[#8E298B]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8E298B]"
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
     },
     {
       title: "Ver reseñas",
       subtitle: "Descubre lo que dicen de nosotros",
       url: "https://www.google.com/search?q=Musiadapta+Rese%C3%B1as",
       icon: <MessageSquare className="w-5 h-5" />,
-      colorClass: "bg-white/90 backdrop-blur-xl border-[#8E298B]/15 hover:border-[#8E298B]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8E298B]"
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
     }
   ];
 
@@ -112,7 +112,7 @@ const App = () => {
   );
 
   return (
-    <div className="min-h-screen font-sans bg-[#FDFDFD] text-[#222] flex flex-col selection:bg-[#8E298B] selection:text-white relative overflow-hidden">
+    <div className="min-h-screen font-sans bg-[#FDFDFD] text-[#222] flex flex-col selection:bg-[#4db8ee] selection:text-white relative overflow-hidden">
       
       {/* BACKGROUND IMAGE overlay */}
       <div className="absolute inset-0 z-0">
@@ -142,7 +142,7 @@ const App = () => {
                   }}
                 />
                 <div className="hidden z-10">
-                  <Music className="w-16 h-16 text-[#8E298B]/20" />
+                  <Music className="w-16 h-16 text-[#4db8ee]/20" />
                 </div>
               </div>
               
@@ -153,7 +153,7 @@ const App = () => {
               <h1 className="text-4xl lg:text-5xl font-extralight tracking-[0.2em] uppercase leading-tight font-serif mb-2 text-slate-900">
                 Gabriela <br className="hidden lg:block"/> Rodríguez
               </h1>
-              <p className="text-xs sm:text-sm tracking-[0.3em] uppercase font-black text-[#8E298B]">
+              <p className="text-xs sm:text-sm tracking-[0.3em] uppercase font-black text-[#4db8ee]">
                 Musiadapta & Avanzamos Juntos
               </p>
               <p className="text-[10px] sm:text-xs tracking-widest uppercase font-bold text-slate-600 mt-2">
@@ -161,8 +161,8 @@ const App = () => {
               </p>
               
               <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 mt-6 font-bold text-slate-800">
-                <a href="mailto:micuroci@hotmail.com" className="flex items-center gap-2 hover:opacity-100 hover:text-[#8E298B] transition-colors justify-center lg:justify-start bg-white/40 p-2.5 px-4 rounded-full border border-white hover:bg-white shadow-[0_2px_8px_-4px_rgba(0,0,0,0.1)]">
-                  <Mail className="w-4 h-4 text-[#8E298B]" />
+                <a href="mailto:micuroci@hotmail.com" className="flex items-center gap-2 hover:opacity-100 hover:text-[#4db8ee] transition-colors justify-center lg:justify-start bg-white/40 p-2.5 px-4 rounded-full border border-white hover:bg-white shadow-[0_2px_8px_-4px_rgba(0,0,0,0.1)]">
+                  <Mail className="w-4 h-4 text-[#4db8ee]" />
                   <span className="text-xs tracking-widest">micuroci@hotmail.com</span>
                 </a>
                 <a href="tel:+34687682752" className="flex items-center gap-2 hover:opacity-100 hover:text-[#1E9895] transition-colors justify-center lg:justify-start bg-white/40 p-2.5 px-4 rounded-full border border-white hover:bg-white shadow-[0_2px_8px_-4px_rgba(0,0,0,0.1)]">
@@ -179,7 +179,7 @@ const App = () => {
           
           {/* Empresa Column */}
           <div className="flex-1 flex flex-col gap-6">
-            <div className="flex items-center gap-4 pb-4 border-b border-[#8E298B]/20 pt-2 min-h-[120px]">
+            <div className="flex items-center gap-4 pb-4 border-b border-[#4db8ee]/20 pt-2 min-h-[120px]">
               <img 
                 src="/musiadapta_logo.png" 
                 alt="Musiadapta Logo" 
@@ -190,16 +190,16 @@ const App = () => {
                 }}
               />
               <div className="w-12 h-12 hidden items-center justify-center bg-white/80 backdrop-blur-md rounded-xl shadow-sm border border-white">
-                <Music className="w-6 h-6 text-[#8E298B]" />
+                <Music className="w-6 h-6 text-[#4db8ee]" />
               </div>
-              <h2 className="text-base font-black tracking-[0.3em] uppercase text-[#8E298B]">Musiadapta</h2>
+              <h2 className="text-base font-black tracking-[0.3em] uppercase text-[#4db8ee]">Musiadapta</h2>
             </div>
             <div className="flex flex-col gap-4">
               {musiadaptaLinks.map((link, i) => <LinkCard key={`empresa-${i}`} link={link} />)}
             </div>
             {/* Address text */}
             <div className="bg-white/80 backdrop-blur-md rounded-2xl p-6 border border-white shadow-sm mt-2">
-              <h4 className="text-[11px] font-black uppercase text-[#8E298B] tracking-widest mb-3">Sede Oficial</h4>
+              <h4 className="text-[11px] font-black uppercase text-[#4db8ee] tracking-widest mb-3">Sede Oficial</h4>
               <div className="text-xs opacity-90 text-slate-700 tracking-wide text-center lg:text-left leading-relaxed font-bold">
                 Parque Empresarial Torneo, Edificio Vilamar 1<br/>
                 Calle Tecnología 26, Planta 3-Módulo 12-20<br/>
@@ -223,7 +223,7 @@ const App = () => {
               <div className="w-12 h-12 hidden items-center justify-center bg-white/80 backdrop-blur-md rounded-xl shadow-sm border border-white">
                 <Heart className="w-6 h-6 text-[#1E9895]" />
               </div>
-              <h2 className="text-base font-black tracking-[0.3em] uppercase text-[#1E9895]">Asociación</h2>
+              <h2 className="text-base font-black tracking-[0.3em] uppercase text-[#1E9895]">Asociación Avanzamos Juntos</h2>
             </div>
             <div className="flex flex-col gap-4">
               {asociacionLinks.map((link, i) => <LinkCard key={`aso-${i}`} link={link} />)}
