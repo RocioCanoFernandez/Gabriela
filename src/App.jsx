@@ -19,28 +19,28 @@ const App = () => {
       url: "http://www.musiadapta.com/",
       icon: <Globe className="w-5 h-5" />,
       primary: true,
-      colorClass: "bg-[#2A4365] text-white border-[#2A4365] shadow-2xl shadow-blue-900/20 hover:-translate-y-1 hover:shadow-blue-900/40"
+      colorClass: "bg-[#4a4036] text-white border-[#4a4036] shadow-xl shadow-[#4a4036]/20 hover:-translate-y-1 hover:shadow-[#4a4036]/30"
     },
     {
       title: "Instagram MUSIADAPTA",
       subtitle: "@gabymusiadapta_micuroci",
       url: "https://www.instagram.com/gabymusiadapta_micuroci/",
       icon: <Instagram className="w-5 h-5" />,
-      colorClass: "bg-white/80 backdrop-blur-md border-black/5 hover:border-black/20 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#2A4365]"
+      colorClass: "bg-white/80 backdrop-blur-md border-[#8b7b65]/10 hover:border-[#8b7b65]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8b7b65]"
     },
     {
       title: "Facebook",
       subtitle: "Centro de Estimulación y Musicoterapia",
       url: "https://www.facebook.com/centrodestimulacionymusicoterapia",
       icon: <Facebook className="w-5 h-5" />,
-      colorClass: "bg-white/80 backdrop-blur-md border-black/5 hover:border-black/20 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#2A4365]"
+      colorClass: "bg-white/80 backdrop-blur-md border-[#8b7b65]/10 hover:border-[#8b7b65]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8b7b65]"
     },
     {
       title: "Google Maps",
       subtitle: "Ubicación en Sevilla",
       url: "https://share.google/r6GcVEi9kwEBp7w9T",
       icon: <MapPin className="w-5 h-5" />,
-      colorClass: "bg-white/80 backdrop-blur-md border-black/5 hover:border-black/20 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#2A4365]"
+      colorClass: "bg-white/80 backdrop-blur-md border-[#8b7b65]/10 hover:border-[#8b7b65]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8b7b65]"
     }
   ];
 
@@ -51,14 +51,14 @@ const App = () => {
       url: "https://www.teaming.net/asociacionavanzamosjuntos-musicoterapia",
       icon: <Heart className="w-6 h-6 animate-pulse" />,
       primary: true,
-      colorClass: "bg-[#059669] text-white border-[#059669] shadow-2xl shadow-emerald-900/30 hover:-translate-y-1 hover:shadow-emerald-900/50 scale-100 lg:scale-105"
+      colorClass: "bg-[#869168] text-white border-[#869168] shadow-xl shadow-[#869168]/30 hover:-translate-y-1 hover:shadow-[#869168]/40 scale-100 lg:scale-105"
     },
     {
       title: "Instagram Asociación",
       subtitle: "@asociacionavanzamosjuntos",
       url: "https://www.instagram.com/asociacionavanzamosjuntos/",
       icon: <Instagram className="w-5 h-5" />,
-      colorClass: "bg-white/80 backdrop-blur-md border-black/5 hover:border-black/20 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#059669]"
+      colorClass: "bg-white/80 backdrop-blur-md border-[#869168]/10 hover:border-[#869168]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#869168]"
     }
   ];
 
@@ -93,12 +93,13 @@ const App = () => {
       {/* BACKGROUND IMAGE overlay */}
       <div className="absolute inset-0 z-0 bg-[#FDFBF7]">
         <img 
-          src="/musiadapta_fondo.jpg" 
+          src="/musiadapta_fondo.png" 
           alt="" 
           className="w-full h-full object-cover fixed z-0"
           onError={(e) => e.target.style.display = 'none'}
         />
-        <div className="absolute inset-0 bg-white/70 backdrop-blur-[1px] fixed z-10" />
+        <div className="absolute inset-0 bg-white/60 backdrop-blur-sm fixed z-10 mix-blend-screen" />
+        <div className="absolute inset-0 bg-[#fbf8f1]/50 fixed z-10" />
       </div>
 
       <div className="relative z-10 w-full flex flex-col min-h-screen">
@@ -106,9 +107,9 @@ const App = () => {
         <div className="w-full p-8 md:p-16 lg:px-24 lg:pt-20 lg:pb-12 text-center lg:text-left">
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="relative group">
-              <div className="w-40 h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-white transition-transform duration-700 group-hover:scale-105 flex items-center justify-center relative">
+              <div className="w-40 h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-[#e8dfcf] shadow-2xl bg-white transition-transform duration-700 group-hover:scale-105 flex items-center justify-center relative">
                 <img 
-                  src="/musiadapta_foto.jpg" 
+                  src="/musiadapta_foto.jpeg" 
                   alt="Gabriela Rodríguez" 
                   className="w-full h-full object-cover absolute z-0"
                   onError={(e) => {
@@ -117,32 +118,32 @@ const App = () => {
                   }}
                 />
                 <div className="hidden z-10">
-                  <Music className="w-16 h-16 text-black/20" />
+                  <Music className="w-16 h-16 text-[#8b7b65]/20" />
                 </div>
               </div>
               {/* Optional smaller logo overlay if it exists */}
               <img 
                   src="/musiadapta_logo.png" 
                   alt="Logo" 
-                  className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-white border border-black/5 shadow-lg object-contain p-2 hover:scale-110 transition-transform"
+                  className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-white border border-[#e8dfcf] shadow-lg object-contain p-2 hover:scale-110 transition-transform"
                   onError={(e) => e.target.style.display = 'none'}
               />
             </div>
             <div>
-              <h1 className="text-4xl lg:text-5xl font-extralight tracking-[0.2em] uppercase leading-tight font-serif mb-2 text-[#2A4365]">
+              <h1 className="text-4xl lg:text-5xl font-extralight tracking-[0.2em] uppercase leading-tight font-serif mb-2 text-[#4a4036]">
                 Gabriela <br className="hidden lg:block"/> Rodríguez
               </h1>
-              <p className="text-xs sm:text-sm tracking-[0.3em] uppercase opacity-60 font-medium">
+              <p className="text-xs sm:text-sm tracking-[0.3em] uppercase opacity-70 font-medium text-[#7a6a57]">
                 Musiadapta & Avanzamos Juntos
               </p>
               
-              <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6 mt-6 opacity-70">
-                <a href="mailto:micuroci@hotmail.com" className="flex items-center gap-2 hover:opacity-100 transition-opacity justify-center lg:justify-start">
+              <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6 mt-6 opacity-80 text-[#5c4a3d]">
+                <a href="mailto:micuroci@hotmail.com" className="flex items-center gap-2 hover:opacity-100 hover:text-[#a07d5a] transition-colors justify-center lg:justify-start">
                   <Mail className="w-4 h-4" />
                   <span className="text-sm tracking-widest">micuroci@hotmail.com</span>
                 </a>
                 <span className="hidden lg:block opacity-30">•</span>
-                <a href="tel:+34687682752" className="flex items-center gap-2 hover:opacity-100 transition-opacity justify-center lg:justify-start">
+                <a href="tel:+34687682752" className="flex items-center gap-2 hover:opacity-100 hover:text-[#a07d5a] transition-colors justify-center lg:justify-start">
                   <Phone className="w-4 h-4" />
                   <span className="text-sm tracking-widest">+34 687 68 27 52</span>
                 </a>
@@ -156,15 +157,15 @@ const App = () => {
           
           {/* Empresa Column */}
           <div className="flex-1 flex flex-col gap-6">
-            <div className="flex items-center gap-3 pb-2 border-b border-[#2A4365]/20">
-              <Music className="w-5 h-5 text-[#2A4365]" />
-              <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-[#2A4365]">Musiadapta</h2>
+            <div className="flex items-center gap-3 pb-2 border-b border-[#8b7b65]/20">
+              <Music className="w-5 h-5 text-[#8b7b65]" />
+              <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-[#8b7b65]">Musiadapta</h2>
             </div>
             <div className="flex flex-col gap-4">
               {musiadaptaLinks.map((link, i) => <LinkCard key={`empresa-${i}`} link={link} isAssociation={false} />)}
             </div>
             {/* Address text */}
-            <div className="text-xs opacity-50 tracking-wide text-center lg:text-left leading-relaxed mt-2 px-4 lg:px-0">
+            <div className="text-xs opacity-60 text-[#4a4036] tracking-wide text-center lg:text-left leading-relaxed mt-2 px-4 lg:px-0">
               Parque Empresarial Torneo, Edificio Vilamar 1<br/>
               Calle Tecnología 26, Planta 3-Modulo 12-20<br/>
               Sevilla, 41015
@@ -173,9 +174,9 @@ const App = () => {
 
           {/* Asociacion Column */}
           <div className="flex-1 flex flex-col gap-6">
-            <div className="flex items-center gap-3 pb-2 border-b border-[#059669]/20">
-              <Heart className="w-5 h-5 text-[#059669]" />
-              <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-[#059669]">Asociación Avanzamos Juntos</h2>
+            <div className="flex items-center gap-3 pb-2 border-b border-[#869168]/20">
+              <Heart className="w-5 h-5 text-[#869168]" />
+              <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-[#869168]">Asociación Avanzamos Juntos</h2>
             </div>
             <div className="flex flex-col gap-4">
               {asociacionLinks.map((link, i) => <LinkCard key={`aso-${i}`} link={link} isAssociation={true} />)}
@@ -185,15 +186,15 @@ const App = () => {
         </div>
 
         {/* Footer Contact */}
-        <div className="mt-auto p-8 md:px-16 lg:px-24 border-t border-black/5 flex flex-wrap gap-10 items-center bg-white/40 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none">
+        <div className="mt-auto p-8 md:px-16 lg:px-24 border-t border-[#8b7b65]/10 flex flex-wrap gap-10 items-center bg-white/40 backdrop-blur-md lg:bg-transparent lg:backdrop-blur-none">
           <a href="https://wa.me/34687682752" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-white border border-black/5 shadow-sm flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-white group-hover:border-[#25D366] transition-all">
+            <div className="w-10 h-10 rounded-full bg-white border border-[#8b7b65]/20 shadow-sm flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-white group-hover:border-[#25D366] transition-all text-[#8b7b65]">
               <Phone className="w-4 h-4" />
             </div>
-            <span className="text-xs font-bold tracking-[0.2em] uppercase">687 68 27 52</span>
+            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#4a4036]">687 68 27 52</span>
           </a>
           <div className="flex-grow"></div>
-          <p className="text-[10px] opacity-30 uppercase tracking-[0.3em] font-medium hidden sm:block">© 2024 Gabriela Rodríguez</p>
+          <p className="text-[10px] opacity-40 text-[#4a4036] uppercase tracking-[0.3em] font-medium hidden sm:block">© 2024 Gabriela Rodríguez</p>
         </div>
       </div>
 
