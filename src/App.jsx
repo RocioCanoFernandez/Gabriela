@@ -201,7 +201,7 @@ const App = () => {
       {/* Floating WhatsApp Button */}
       <a
         href="https://wa.me/34687682752"
-        className="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#25D366]/30 hover:shadow-2xl hover:shadow-[#25D366]/40 hover:-translate-y-1 transition-all duration-500 z-50 group border border-white/20"
+        className="fixed bottom-6 right-6 w-14 h-14 bg-[#869168] text-white rounded-full flex items-center justify-center shadow-lg shadow-[#869168]/30 hover:shadow-2xl hover:shadow-[#869168]/40 hover:-translate-y-1 transition-all duration-500 z-50 group border border-white/20"
         title="Contactar por WhatsApp"
       >
         <svg className="w-7 h-7 fill-current opacity-90 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
