@@ -146,13 +146,6 @@ const App = () => {
                 </div>
               </div>
               
-              {/* Optional smaller Musiadapta Logo next to profile */}
-              <img 
-                  src="/musiadapta_logo.png" 
-                  alt="Musiadapta" 
-                  className="absolute -bottom-2 -right-4 w-20 h-20 rounded-full bg-white border border-white shadow-lg object-contain p-1 hover:scale-110 transition-transform"
-                  onError={(e) => e.target.style.display = 'none'}
-              />
             </div>
 
             {/* Este bloque envuelve el texto con un cristal claro para mantener el contraste ante un fondo colorido */}
@@ -186,8 +179,17 @@ const App = () => {
           
           {/* Empresa Column */}
           <div className="flex-1 flex flex-col gap-6">
-            <div className="flex items-center gap-3 pb-4 border-b border-[#8E298B]/20 pt-2 min-h-[64px]">
-              <div className="w-12 h-12 flex items-center justify-center bg-white/80 backdrop-blur-md rounded-xl shadow-sm border border-white">
+            <div className="flex items-center gap-4 pb-4 border-b border-[#8E298B]/20 pt-2 min-h-[72px]">
+              <img 
+                src="/musiadapta_logo.png" 
+                alt="Musiadapta Logo" 
+                className="h-14 w-auto object-contain drop-shadow-sm" 
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextElementSibling.style.display = 'flex';
+                }}
+              />
+              <div className="w-12 h-12 hidden items-center justify-center bg-white/80 backdrop-blur-md rounded-xl shadow-sm border border-white">
                 <Music className="w-6 h-6 text-[#8E298B]" />
               </div>
               <h2 className="text-base font-black tracking-[0.3em] uppercase text-[#8E298B]">Musiadapta</h2>
@@ -208,18 +210,18 @@ const App = () => {
 
           {/* Asociacion Column */}
           <div className="flex-1 flex flex-col gap-6">
-            <div className="flex items-center gap-3 pb-4 border-b border-[#1E9895]/20 pt-2 min-h-[64px]">
-              <div className="w-12 h-12 flex items-center justify-center bg-white/80 backdrop-blur-md rounded-xl shadow-sm border border-white p-1">
-                <img 
-                  src="/asociacion_logo.png" 
-                  alt="Asociación Logo" 
-                  className="w-full h-full object-contain rounded-lg" 
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextElementSibling.style.display = 'block';
-                  }}
-                />
-                <Heart className="w-6 h-6 text-[#1E9895] hidden" />
+            <div className="flex items-center gap-4 pb-4 border-b border-[#1E9895]/20 pt-2 min-h-[72px]">
+              <img 
+                src="/asociacion_logo.png" 
+                alt="Asociación Logo" 
+                className="h-14 w-auto object-contain drop-shadow-sm" 
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextElementSibling.style.display = 'flex';
+                }}
+              />
+              <div className="w-12 h-12 hidden items-center justify-center bg-white/80 backdrop-blur-md rounded-xl shadow-sm border border-white">
+                <Heart className="w-6 h-6 text-[#1E9895]" />
               </div>
               <h2 className="text-base font-black tracking-[0.3em] uppercase text-[#1E9895]">Asociación</h2>
             </div>
