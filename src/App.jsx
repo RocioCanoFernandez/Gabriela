@@ -179,11 +179,11 @@ const App = () => {
           
           {/* Empresa Column */}
           <div className="flex-1 flex flex-col gap-6">
-            <div className="flex items-center gap-4 pb-4 border-b border-[#8E298B]/20 pt-2 min-h-[72px]">
+            <div className="flex items-center gap-4 pb-4 border-b border-[#8E298B]/20 pt-2 min-h-[96px]">
               <img 
                 src="/musiadapta_logo.png" 
                 alt="Musiadapta Logo" 
-                className="h-14 w-auto object-contain drop-shadow-sm" 
+                className="h-[72px] w-auto object-contain drop-shadow-sm" 
                 onError={(e) => {
                   e.target.style.display = 'none';
                   e.target.nextElementSibling.style.display = 'flex';
@@ -210,11 +210,11 @@ const App = () => {
 
           {/* Asociacion Column */}
           <div className="flex-1 flex flex-col gap-6">
-            <div className="flex items-center gap-4 pb-4 border-b border-[#1E9895]/20 pt-2 min-h-[72px]">
+            <div className="flex items-center gap-4 pb-4 border-b border-[#1E9895]/20 pt-2 min-h-[96px]">
               <img 
                 src="/asociacion_logo.png" 
                 alt="Asociación Logo" 
-                className="h-14 w-auto object-contain drop-shadow-sm" 
+                className="h-[72px] w-auto object-contain drop-shadow-sm" 
                 onError={(e) => {
                   e.target.style.display = 'none';
                   e.target.nextElementSibling.style.display = 'flex';
