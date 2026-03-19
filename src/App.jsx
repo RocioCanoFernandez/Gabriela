@@ -8,7 +8,9 @@ import {
   Mail, 
   Phone,
   ArrowRight,
-  Music
+  Music,
+  Star,
+  MessageSquare
 } from 'lucide-react';
 
 const App = () => {
@@ -41,6 +43,20 @@ const App = () => {
       url: "https://share.google/r6GcVEi9kwEBp7w9T",
       icon: <MapPin className="w-5 h-5" />,
       colorClass: "bg-white/80 backdrop-blur-md border-[#8b7b65]/10 hover:border-[#8b7b65]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8b7b65]"
+    },
+    {
+      title: "Musiadapta - Reseñas",
+      subtitle: "Queremos saber tu opinión. Publica una reseña.",
+      url: "https://g.page/r/CRjS4P6CsClrEAE/review",
+      icon: <Star className="w-5 h-5" />,
+      colorClass: "bg-white/80 backdrop-blur-md border-[#8b7b65]/10 hover:border-[#8b7b65]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#a07d5a]"
+    },
+    {
+      title: "Ver reseñas",
+      subtitle: "Descubre lo que dicen de nosotros",
+      url: "https://www.google.com/search?sca_esv=f818ef0c6d37c692&biw=1536&bih=730&sxsrf=ANbL-n7PEQJAZAiSQJCpfD9ge18CmLZt_g:1773934094208&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOTOQfTmkQHbhNIIr_MLki8I-4-xVw252fBmPjBRa_L9w4GlEMWV1SeZ3N8xs1KzvVhhwcfU_2beYmY4Jc__7Xvecd78E&q=Musiadapta+Rese%C3%B1as&sa=X&ved=2ahUKEwjm7qi8o6yTAxV_SvEDHVKMJsIQ0bkNegQIJBAH&cshid=1773934114893075",
+      icon: <MessageSquare className="w-5 h-5" />,
+      colorClass: "bg-white/80 backdrop-blur-md border-[#8b7b65]/10 hover:border-[#8b7b65]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#8b7b65]"
     }
   ];
 
@@ -58,6 +74,13 @@ const App = () => {
       subtitle: "@asociacionavanzamosjuntos",
       url: "https://www.instagram.com/asociacionavanzamosjuntos/",
       icon: <Instagram className="w-5 h-5" />,
+      colorClass: "bg-white/80 backdrop-blur-md border-[#869168]/10 hover:border-[#869168]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#869168]"
+    },
+    {
+      title: "Apoya este proyecto",
+      subtitle: "Colabora con la asociación",
+      url: "https://www.migranodearena.org/reto/un-grano-de-musicoterapia-para-pediatria",
+      icon: <Heart className="w-5 h-5" />,
       colorClass: "bg-white/80 backdrop-blur-md border-[#869168]/10 hover:border-[#869168]/30 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#869168]"
     }
   ];
@@ -136,6 +159,9 @@ const App = () => {
               <p className="text-xs sm:text-sm tracking-[0.3em] uppercase opacity-70 font-medium text-[#7a6a57]">
                 Musiadapta & Avanzamos Juntos
               </p>
+              <p className="text-[10px] sm:text-[11px] tracking-widest uppercase opacity-80 font-bold text-[#8b7b65] mt-2">
+                Musicoterapeuta acreditada (MTAE) nº 232
+              </p>
               
               <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6 mt-6 opacity-80 text-[#5c4a3d]">
                 <a href="mailto:micuroci@hotmail.com" className="flex items-center gap-2 hover:opacity-100 hover:text-[#a07d5a] transition-colors justify-center lg:justify-start">
@@ -175,7 +201,16 @@ const App = () => {
           {/* Asociacion Column */}
           <div className="flex-1 flex flex-col gap-6">
             <div className="flex items-center gap-3 pb-2 border-b border-[#869168]/20">
-              <Heart className="w-5 h-5 text-[#869168]" />
+              <img 
+                src="/musiadapta_logo.png" 
+                alt="Alianzamos Juntos" 
+                className="w-10 h-10 object-contain" 
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextElementSibling.style.display = 'block';
+                }}
+              />
+              <Heart className="w-5 h-5 text-[#869168] hidden" />
               <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-[#869168]">Asociación Avanzamos Juntos</h2>
             </div>
             <div className="flex flex-col gap-4">
