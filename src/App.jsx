@@ -10,7 +10,9 @@ import {
   ArrowRight,
   Music,
   Star,
-  MessageSquare
+  MessageSquare,
+  GraduationCap,
+  Download
 } from 'lucide-react';
 
 const App = () => {
@@ -56,6 +58,27 @@ const App = () => {
       subtitle: "Descubre lo que dicen de nosotros",
       url: "https://www.google.com/search?q=Musiadapta+Rese%C3%B1as",
       icon: <MessageSquare className="w-5 h-5" />,
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
+    },
+    {
+      title: "ESCUELA OFICIAL DE MUSICAEDUCA en SEVILLA",
+      subtitle: "ABRIMOS PLAZAS DURANTE EL MES DE SEPTIEMBRE",
+      url: "https://www.musicaeduca.es/",
+      icon: <Music className="w-5 h-5" />,
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
+    },
+    {
+      title: "Máster de Musicoterapia UPO",
+      subtitle: "Universidad Pablo de Olavide",
+      url: "https://www.upo.es/postgrado/Master-en-Musicoterapia/",
+      icon: <GraduationCap className="w-5 h-5" />,
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
+    },
+    {
+      title: "Instagram del Máster",
+      subtitle: "@mastermusicoterapiaupo_sevilla",
+      url: "https://www.instagram.com/mastermusicoterapiaupo_sevilla/",
+      icon: <Instagram className="w-5 h-5" />,
       colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
     }
   ];
@@ -111,6 +134,19 @@ const App = () => {
     </a>
   );
 
+  const handleSaveContact = () => {
+    const vcard = `BEGIN:VCARD\r\nVERSION:3.0\r\nFN:Gabriela Rodríguez\r\nORG:Musiadapta & Avanzamos Juntos\r\nTITLE:Musicoterapeuta acreditada (MTAE) nº 232 / Musicoterapeuta - NMT / MTFO\r\nTEL;TYPE=CELL:+34687682752\r\nEMAIL:micuroci@hotmail.com\r\nURL:https://hub-hub-gabriela.npfusf.easypanel.host/\r\nEND:VCARD`;
+    const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Gabriela_Rodriguez.vcf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className="min-h-screen font-sans bg-[#FDFDFD] text-[#222] flex flex-col selection:bg-[#4db8ee] selection:text-white relative overflow-hidden">
       
@@ -157,10 +193,11 @@ const App = () => {
                 Musiadapta & Avanzamos Juntos
               </p>
               <p className="text-[10px] sm:text-xs tracking-widest uppercase font-bold text-slate-600 mt-2">
-                Musicoterapeuta acreditada (MTAE) nº 232
+                Musicoterapeuta acreditada (MTAE) nº 232<br />
+                <span className="text-[#4db8ee]">Musicoterapeuta - NMT / MTFO</span>
               </p>
               
-              <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 mt-6 font-bold text-slate-800">
+              <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 mt-6 font-bold text-slate-800 flex-wrap">
                 <a href="mailto:micuroci@hotmail.com" className="flex items-center gap-2 hover:opacity-100 hover:text-[#4db8ee] transition-colors justify-center lg:justify-start bg-white/40 p-2.5 px-4 rounded-full border border-white hover:bg-white shadow-[0_2px_8px_-4px_rgba(0,0,0,0.1)]">
                   <Mail className="w-4 h-4 text-[#4db8ee]" />
                   <span className="text-xs tracking-widest">micuroci@hotmail.com</span>
@@ -246,6 +283,15 @@ const App = () => {
           </p>
         </div>
       </div>
+
+      <button
+        onClick={handleSaveContact}
+        className="fixed top-6 right-6 w-14 h-14 bg-white/90 backdrop-blur-md text-slate-700 rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 z-50 group border border-white/50 cursor-pointer"
+        title="Descargar Contacto"
+        aria-label="Descargar Contacto"
+      >
+        <Download className="w-6 h-6 group-hover:text-[#4db8ee] transition-colors drop-shadow-sm" />
+      </button>
 
       {/* Floating WhatsApp Button */}
       <a
