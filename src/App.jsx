@@ -61,16 +61,9 @@ const App = () => {
       colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
     },
     {
-      title: "ESCUELA OFICIAL DE MUSICAEDUCA en SEVILLA",
-      subtitle: "ABRIMOS PLAZAS DURANTE EL MES DE SEPTIEMBRE",
-      url: "https://www.musicaeduca.es/",
-      icon: <Music className="w-5 h-5" />,
-      colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
-    },
-    {
       title: "Máster de Musicoterapia UPO",
       subtitle: "Universidad Pablo de Olavide",
-      url: "https://www.upo.es/postgrado/Master-en-Musicoterapia/",
+      url: "https://www.upo.es/formacionpermanente/master-formacion-permanente/musicoterapia-aplicada/",
       icon: <GraduationCap className="w-5 h-5" />,
       colorClass: "bg-white/90 backdrop-blur-xl border-[#4db8ee]/15 hover:border-[#4db8ee]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#4db8ee]"
     },
@@ -104,6 +97,13 @@ const App = () => {
       title: "Instagram Asociación",
       subtitle: "@asociacionavanzamosjuntos",
       url: "https://www.instagram.com/asociacionavanzamosjuntos/",
+      icon: <Instagram className="w-5 h-5" />,
+      colorClass: "bg-white/90 backdrop-blur-xl border-[#1E9895]/15 hover:border-[#1E9895]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#1E9895]"
+    },
+    {
+      title: "III Jornadas de Musicoterapia en NOVIEMBRE",
+      subtitle: "Síguenos en Instagram",
+      url: "https://www.instagram.com/jornadas_de_mta_hospitalaria/",
       icon: <Instagram className="w-5 h-5" />,
       colorClass: "bg-white/90 backdrop-blur-xl border-[#1E9895]/15 hover:border-[#1E9895]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#1E9895]"
     }
@@ -278,9 +278,16 @@ const App = () => {
             <span className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-800">687 68 27 52</span>
           </a>
           <div className="flex-grow"></div>
-          <p className="text-[10px] opacity-70 text-slate-800 uppercase tracking-[0.3em] font-black hidden sm:block bg-white/60 px-4 py-2 rounded-full border border-white">
-            © 2026 Gabriela Rodríguez
-          </p>
+          <div className="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-full border border-white shadow-sm hidden sm:flex">
+            <p className="text-[10px] opacity-70 text-slate-800 uppercase tracking-[0.2em] font-black">
+              © 2026 Gabriela Rodríguez
+            </p>
+            <div className="w-px h-3 bg-slate-300 mx-1"></div>
+            <p className="text-[10px] opacity-70 text-slate-800 uppercase tracking-[0.2em] font-black flex items-center gap-1.5">
+              SeviAI Ecosystem
+              <img src="/logo_sin_fondo.png" alt="SeviAI" className="h-3 w-auto opacity-70 grayscale mix-blend-multiply" />
+            </p>
+          </div>
         </div>
       </div>
 
