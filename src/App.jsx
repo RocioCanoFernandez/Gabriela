@@ -101,8 +101,8 @@ const App = () => {
       colorClass: "bg-white/90 backdrop-blur-xl border-[#1E9895]/15 hover:border-[#1E9895]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#1E9895]"
     },
     {
-      title: "III Jornadas de Musicoterapia en NOVIEMBRE",
-      subtitle: "Síguenos en Instagram",
+      title: "III Jornadas de Musicoterapia Hospitalaria",
+      subtitle: "Próximamente en NOVIEMBRE - Síguenos en Instagram",
       url: "https://www.instagram.com/jornadas_de_mta_hospitalaria/",
       icon: <Instagram className="w-5 h-5" />,
       colorClass: "bg-white/90 backdrop-blur-xl border-[#1E9895]/15 hover:border-[#1E9895]/40 hover:shadow-xl hover:-translate-y-1 group-hover:text-[#1E9895]"
