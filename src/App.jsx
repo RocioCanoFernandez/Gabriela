@@ -12,7 +12,8 @@ import {
   Star,
   MessageSquare,
   GraduationCap,
-  Download
+  Download,
+  Calendar
 } from 'lucide-react';
 
 const App = () => {
@@ -209,6 +210,34 @@ const App = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Calendar Section */}
+        <div className="w-full px-6 md:px-16 lg:px-24 mb-10 max-w-7xl mx-auto relative z-20">
+          <a 
+            href="https://cal.com/gabriela-rodriguez-eg3zch" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full bg-[#E58B43] rounded-[2rem] p-8 md:p-10 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 group border-b-4 border-[#C76F27] relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity transform group-hover:scale-110 duration-500">
+               <Calendar className="w-40 h-40 text-black" />
+            </div>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+              <div className="flex items-center gap-6">
+                <div className="bg-white/20 text-white p-4 rounded-2xl group-hover:rotate-12 transition-transform shadow-md border border-white/30 backdrop-blur-sm">
+                  <Calendar className="w-10 h-10" />
+                </div>
+                <div className="text-center md:text-left">
+                  <h3 className="text-3xl font-black text-white mb-1 uppercase tracking-wider drop-shadow-sm">Calendario</h3>
+                  <p className="text-white/90 text-sm md:text-base font-bold tracking-widest uppercase">Reserva tu cita conmigo</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-3 bg-white text-[#E58B43] px-8 py-4 rounded-full font-black uppercase text-sm tracking-widest shadow-lg group-hover:bg-slate-50 transition-colors w-full md:w-auto">
+                Reservar <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </div>
+          </a>
         </div>
 
         {/* Two Column Layout Block */}
