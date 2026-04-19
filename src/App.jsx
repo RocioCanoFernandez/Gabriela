@@ -298,25 +298,18 @@ const App = () => {
 
         </div>
 
-        {/* Footer Contact */}
-        <div className="mt-auto p-8 md:px-16 lg:px-24 border-t border-white/40 flex flex-wrap gap-10 items-center bg-white/40 backdrop-blur-sm lg:bg-transparent lg:backdrop-blur-none">
-          <a href="https://wa.me/34687682752" className="flex items-center gap-3 group bg-white/60 p-2 pr-5 rounded-full hover:bg-white transition-all shadow-sm border border-white">
-            <div className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-white transition-all text-slate-800">
-              <Phone className="w-4 h-4" />
-            </div>
-            <span className="text-[11px] font-black tracking-[0.2em] uppercase text-slate-800">687 68 27 52</span>
+        
+        {/* Footer SeviAI Ecosystem */}
+        <div style={{ marginTop: '2rem', padding: '0 2rem 2rem 2rem', display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: 0.8, transition: 'opacity 0.3s ease' }} onMouseEnter={(e) => e.currentTarget.style.opacity = '1'} onMouseLeave={(e) => e.currentTarget.style.opacity = '0.8'}>
+          <p style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', fontWeight: '500', color: 'rgba(0,0,0,0.8)', textAlign: 'center', marginBottom: '1rem', margin: 0, paddingBottom: '16px' }}>
+            © 2026 {hubData.name}
+          </p>
+          <a href="https://www.seviai.es/" target="_blank" rel="noopener noreferrer" style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.2em', fontWeight: 'bold', color: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', textDecoration: 'none', transition: 'color 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.color = '#DCAE56'; if(e.currentTarget.querySelector('img')) e.currentTarget.querySelector('img').style.opacity = '1'; }} onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(0,0,0,0.7)'; if(e.currentTarget.querySelector('img')) e.currentTarget.querySelector('img').style.opacity = '0.7'; }}>
+            SeviAI Ecosystem
+            <img src="/logo_sin_fondo.png" alt="SeviAI" style={{ height: '16px', width: 'auto', opacity: 0.7, filter: 'grayscale(100%)', transition: 'opacity 0.3s ease' }} />
           </a>
-          <div className="flex-grow"></div>
-          <div className="flex items-center gap-2 bg-white/60 px-4 py-2 rounded-full border border-white shadow-sm hidden sm:flex">
-            <p className="text-[10px] opacity-70 text-slate-800 uppercase tracking-[0.2em] font-black">
-              © 2026 Gabriela Rodríguez
-            </p>
-            <div className="w-px h-3 bg-slate-300 mx-1"></div>
-            <p className="text-[10px] opacity-70 text-slate-800 uppercase tracking-[0.2em] font-black flex items-center gap-1.5">
-              SeviAI Ecosystem
-              <img src="/logo_sin_fondo.png" alt="SeviAI" className="h-3 w-auto opacity-70 grayscale mix-blend-multiply" />
-            </p>
-          </div>
+        </div>
+
         </div>
       </div>
 
