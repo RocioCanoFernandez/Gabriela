@@ -136,7 +136,7 @@ const App = () => {
   );
 
   const handleSaveContact = () => {
-    const vcard = `BEGIN:VCARD\r\nVERSION:3.0\r\nFN:Gabriela Rodríguez\r\nORG:Musiadapta & Avanzamos Juntos\r\nTITLE:Musicoterapeuta acreditada (MTAE) nº 232 / Musicoterapeuta - NMT / MTFO\r\nTEL;TYPE=CELL:+34687682752\r\nEMAIL:micuroci@hotmail.com\r\nURL:https://hub-hub-gabriela.npfusf.easypanel.host/\r\nEND:VCARD`;
+    const vcard = `BEGIN:VCARD\r\nVERSION:3.0\r\nN:Rodríguez;Gabriela;;;\r\nFN:Gabriela Rodríguez\r\nORG:Musiadapta & Avanzamos Juntos\r\nTITLE:Musicoterapeuta acreditada (MTAE) nº 232 / Musicoterapeuta - NMT / MTFO\r\nTEL;TYPE=CELL:+34687682752\r\nEMAIL:micuroci@hotmail.com\r\nURL:https://hub-hub-gabriela.npfusf.easypanel.host/\r\nEND:VCARD`;
     const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
