@@ -215,7 +215,7 @@ const App = () => {
         {/* Calendar Section */}
         <div className="w-full px-6 md:px-16 lg:px-24 mb-10 max-w-7xl mx-auto relative z-20">
           <a 
-            href="https://cal.com/gabriela-rodriguez-eg3zch" 
+            href="https://calendar.app.google/RvSw8fPdAku6ykaN7" 
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full bg-[#E58B43] rounded-[2rem] p-8 md:p-10 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 group border-b-4 border-[#C76F27] relative overflow-hidden"
